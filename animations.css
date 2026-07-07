@@ -1,0 +1,247 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heroScrollBounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
+}
+
+@keyframes heroScrollDot {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-bg) 25%,
+    var(--color-border-light) 50%,
+    var(--color-bg) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+[data-reveal] {
+  opacity: 0;
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-reveal="fade-up"] {
+  transform: translateY(40px);
+}
+
+[data-reveal="fade-down"] {
+  transform: translateY(-40px);
+}
+
+[data-reveal="fade-left"] {
+  transform: translateX(-40px);
+}
+
+[data-reveal="fade-right"] {
+  transform: translateX(40px);
+}
+
+[data-reveal="scale"] {
+  transform: scale(0.9);
+}
+
+[data-reveal="zoom-in"] {
+  transform: scale(0.85);
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+[data-reveal-delay="100"] {
+  transition-delay: 100ms;
+}
+[data-reveal-delay="150"] {
+  transition-delay: 150ms;
+}
+[data-reveal-delay="200"] {
+  transition-delay: 200ms;
+}
+[data-reveal-delay="300"] {
+  transition-delay: 300ms;
+}
+[data-reveal-delay="400"] {
+  transition-delay: 400ms;
+}
+[data-reveal-delay="500"] {
+  transition-delay: 500ms;
+}
+[data-reveal-delay="600"] {
+  transition-delay: 600ms;
+}
+
+.hero-anim--eyebrow {
+  animation: fadeInDown 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+.hero-anim--title {
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+}
+
+.hero-anim--subtitle {
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+}
+
+.hero-anim--actions {
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.65s both;
+}
+
+.hero-anim--stats {
+  animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.8s both;
+}
+
+.hover-lift {
+  transition: transform var(--transition-slow);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.hover-scale {
+  transition: transform var(--transition-base);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: var(--color-white);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+.anim-float {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+.anim-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}

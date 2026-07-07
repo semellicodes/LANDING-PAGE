@@ -1,0 +1,242 @@
+/* ============================================================
+   PRODUCTS.CSS — Products Section
+   ============================================================ */
+
+.products {
+    background-color: var(--color-bg);
+}
+
+/* ── Filtros ─────────────────────────────────────────────── */
+.products__filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-10);
+}
+
+.filter-btn {
+    padding: var(--space-2) var(--space-5);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+    background-color: var(--color-white);
+    border: 1.5px solid var(--color-border);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.is-active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-primary);
+}
+
+/* ── Grid ────────────────────────────────────────────────── */
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+/* ── Product Card ────────────────────────────────────────── */
+.product-card {
+    position: relative;
+    background-color: var(--color-white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* ── Imagem ─────────────────────────────────────────────── */
+.product-card__image-wrap {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--color-primary-bg);
+}
+
+.product-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.product-card:hover .product-card__image {
+    transform: scale(1.06);
+}
+
+.product-card__image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background: linear-gradient(135deg, var(--color-primary-bg), #FFE0C8);
+}
+
+/* ── Ações sobre a imagem ───────────────────────────────── */
+.product-card__actions {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    transform: translateX(60px);
+    transition: transform var(--transition-slow);
+}
+
+.product-card:hover .product-card__actions {
+    transform: translateX(0);
+}
+
+.product-card__action-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-white);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.product-card__action-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* ── Badges ─────────────────────────────────────────────── */
+.product-card__tag {
+    position: absolute;
+    top: var(--space-3);
+    left: var(--space-3);
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.product-card__tag--sale {
+    background-color: #EF4444;
+    color: var(--color-white);
+}
+
+.product-card__tag--new {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.product-card__tag--best {
+    background-color: #F59E0B;
+    color: var(--color-white);
+}
+
+/* ── Corpo do card ──────────────────────────────────────── */
+.product-card__body {
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.product-card__category {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: var(--space-1);
+}
+
+.product-card__name {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text);
+    margin-bottom: var(--space-2);
+    line-height: var(--line-height-snug);
+}
+
+.product-card__rating {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.product-card__rating-count {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+/* ── Preço ──────────────────────────────────────────────── */
+.product-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border-light);
+}
+
+.product-card__pricing {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card__price-old {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    text-decoration: line-through;
+}
+
+.product-card__price-current {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-primary);
+}
+
+.product-card__cart-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    box-shadow: var(--shadow-primary);
+    cursor: pointer;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.product-card__cart-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 20px rgba(255, 140, 66, 0.45);
+}
+
+/* ── Ver mais ────────────────────────────────────────────── */
+.products__cta {
+    text-align: center;
+    margin-top: var(--space-10);
+}

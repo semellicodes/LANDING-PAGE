@@ -1,0 +1,1841 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pet Love — Pet Shop com atendimento humanizado, veterinários especializados, banho e tosa, hotelzinho e muito mais. Agende online!"
+    />
+    <meta name="theme-color" content="#FF8C42" />
+
+    <meta
+      property="og:title"
+      content="Pet Love — Cuidado e Amor para seu Pet"
+    />
+    <meta
+      property="og:description"
+      content="O melhor pet shop da cidade, com veterinários especializados e atendimento humanizado."
+    />
+    <meta property="og:type" content="website" />
+
+    <title>Pet Love — Todo o amor que seu melhor amigo merece</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="testimonials.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <header class="header header--transparent" role="banner">
+      <div class="header__inner">
+        <a
+          href="#inicio"
+          class="header__logo"
+          aria-label="Pet Love — Página inicial"
+        >
+          <div class="logo__icon">
+            <i class="fa-solid fa-paw" aria-hidden="true"></i>
+          </div>
+          <div class="logo__text">
+            <span class="logo__name">Pet <span>Love</span></span>
+            <span class="logo__tagline">Pet Shop & Vet</span>
+          </div>
+        </a>
+
+        <nav class="nav--desktop" aria-label="Navegação principal">
+          <ul class="nav__list" role="list">
+            <li><a href="#servicos" class="nav__link">Serviços</a></li>
+            <li><a href="#produtos" class="nav__link">Produtos</a></li>
+            <li><a href="#galeria" class="nav__link">Galeria</a></li>
+            <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+            <li><a href="#faq" class="nav__link">FAQ</a></li>
+            <li><a href="#contato" class="nav__link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__cta header__cta--desktop">
+          <a href="#contato" class="btn btn--primary">
+            <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+            Agende Agora
+          </a>
+        </div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="nav-overlay" aria-hidden="true"></div>
+
+    <nav
+      id="mobile-nav"
+      class="nav--mobile"
+      aria-label="Menu mobile"
+      aria-hidden="true"
+    >
+      <ul class="nav__list" role="list">
+        <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#produtos" class="nav__link">Produtos</a></li>
+        <li><a href="#galeria" class="nav__link">Galeria</a></li>
+        <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
+      </ul>
+      <div class="header__cta">
+        <a href="#contato" class="btn btn--primary btn--lg">
+          <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+          Agende Agora
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="inicio" class="hero" aria-labelledby="hero-title">
+        <div
+          class="hero__bg"
+          role="img"
+          aria-label="Cachorros e gatos felizes"
+        ></div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        <div class="hero__shape hero__shape--1" aria-hidden="true"></div>
+        <div class="hero__shape hero__shape--2" aria-hidden="true"></div>
+
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__eyebrow hero-anim--eyebrow">
+              <i class="fa-solid fa-paw" aria-hidden="true"></i>
+              Pet Shop & Clínica Veterinária
+            </p>
+
+            <h1 id="hero-title" class="hero__title hero-anim--title">
+              Todo o <span class="highlight">amor e cuidado</span>
+              que seu melhor amigo merece.
+            </h1>
+
+            <p class="hero__subtitle hero-anim--subtitle">
+              Atendimento humanizado, veterinários especializados e um ambiente
+              seguro para deixar seu pet feliz e saudável todos os dias.
+            </p>
+
+            <div class="hero__actions hero-anim--actions">
+              <a href="#contato" class="btn btn--primary btn--lg">
+                <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                Agendar Atendimento
+              </a>
+              <a
+                href="#servicos"
+                class="btn btn--secondary btn--lg"
+                style="border-color: rgba(255, 255, 255, 0.6); color: #fff"
+              >
+                <i class="fa-solid fa-grid-2" aria-hidden="true"></i>
+                Conhecer Serviços
+              </a>
+            </div>
+
+            <div class="hero__stats hero-anim--stats">
+              <div class="hero__stat">
+                <span class="hero__stat-value">
+                  <span data-counter="8" data-suffix="+" data-duration="1500"
+                    >0+</span
+                  >
+                </span>
+                <span class="hero__stat-label">Anos de experiência</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-value">
+                  <span data-counter="5000" data-suffix="+" data-duration="2000"
+                    >0+</span
+                  >
+                </span>
+                <span class="hero__stat-label">Pets atendidos</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-value">
+                  <span data-counter="4.9" data-suffix="★" data-duration="1200"
+                    >0★</span
+                  >
+                </span>
+                <span class="hero__stat-label">Avaliação média</span>
+              </div>
+              <div class="hero__stat">
+                <span class="hero__stat-value">
+                  <span data-counter="12" data-suffix="+" data-duration="1200"
+                    >0+</span
+                  >
+                </span>
+                <span class="hero__stat-label">Especialistas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+          <div class="hero__scroll-icon">
+            <span class="hero__scroll-dot"></span>
+          </div>
+          <span>Explorar</span>
+        </div>
+      </section>
+      <section class="features" aria-label="Nossos diferenciais">
+        <div class="container">
+          <div class="features__grid">
+            <div
+              class="feature-card"
+              data-reveal="fade-up"
+              data-reveal-delay="100"
+            >
+              <div class="feature-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <h3 class="feature-card__title">Atendimento Humanizado</h3>
+              <p class="feature-card__text">
+                Tratamos seu pet com o mesmo carinho que você. Nossa equipe é
+                treinada para oferecer uma experiência tranquila e afetuosa.
+              </p>
+            </div>
+
+            <div
+              class="feature-card"
+              data-reveal="fade-up"
+              data-reveal-delay="200"
+            >
+              <div class="feature-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <h3 class="feature-card__title">Veterinários Especializados</h3>
+              <p class="feature-card__text">
+                Time de veterinários com CRMV ativo e especialização nas
+                principais áreas da medicina veterinária moderna.
+              </p>
+            </div>
+
+            <div
+              class="feature-card"
+              data-reveal="fade-up"
+              data-reveal-delay="300"
+            >
+              <div class="feature-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-shield-dog"></i>
+              </div>
+              <h3 class="feature-card__title">Ambiente Seguro</h3>
+              <p class="feature-card__text">
+                Espaço higienizado diariamente, câmeras 24h e protocolos
+                rigorosos de biossegurança para a saúde de todos os pets.
+              </p>
+            </div>
+
+            <div
+              class="feature-card"
+              data-reveal="fade-up"
+              data-reveal-delay="400"
+            >
+              <div class="feature-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3 class="feature-card__title">Produtos Premium</h3>
+              <p class="feature-card__text">
+                Trabalhamos apenas com marcas líderes de mercado e produtos de
+                alta qualidade, aprovados por veterinários.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="servicos"
+        class="section section--alt"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">O que oferecemos</p>
+            <h2 id="services-title" class="section__title">
+              Serviços para deixar <span>seu pet</span> radiante
+            </h2>
+            <p class="section__subtitle">
+              Do banho à consulta veterinária, temos tudo o que seu companheiro
+              precisa em um só lugar.
+            </p>
+          </header>
+
+          <div class="services__grid">
+            <article
+              class="service-card"
+              data-reveal="fade-up"
+              data-reveal-delay="100"
+            >
+              <span class="service-card__badge">Popular</span>
+              <div class="service-card__icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-shower"></i>
+              </div>
+              <h3 class="service-card__title">Banho e Tosa</h3>
+              <p class="service-card__text">
+                Banho relaxante, escovação, secagem e tosa higiênica ou estética
+                com produtos premium.
+              </p>
+              <div class="service-card__price">
+                <span class="service-card__price-label">A partir de</span>
+                <span class="service-card__price-value">R$ 60</span>
+              </div>
+              <a href="#contato" class="service-card__link">
+                Agendar
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article
+              class="service-card"
+              data-reveal="fade-up"
+              data-reveal-delay="150"
+            >
+              <div class="service-card__icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <h3 class="service-card__title">Consulta Veterinária</h3>
+              <p class="service-card__text">
+                Avaliação clínica completa com veterinários especializados em
+                cães, gatos e pequenos animais.
+              </p>
+              <div class="service-card__price">
+                <span class="service-card__price-label">A partir de</span>
+                <span class="service-card__price-value">R$ 120</span>
+              </div>
+              <a href="#contato" class="service-card__link">
+                Agendar
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article
+              class="service-card"
+              data-reveal="fade-up"
+              data-reveal-delay="200"
+            >
+              <div class="service-card__icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-syringe"></i>
+              </div>
+              <h3 class="service-card__title">Vacinação</h3>
+              <p class="service-card__text">
+                Calendário vacinal completo com as principais vacinas para cães
+                e gatos, com caderneta atualizada.
+              </p>
+              <div class="service-card__price">
+                <span class="service-card__price-label">A partir de</span>
+                <span class="service-card__price-value">R$ 80</span>
+              </div>
+              <a href="#contato" class="service-card__link">
+                Agendar
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="fade-up"
+              data-reveal-delay="250"
+            >
+              <span class="service-card__badge">Premium</span>
+              <div class="service-card__icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-house"></i>
+              </div>
+              <h3 class="service-card__title">Hotelzinho</h3>
+              <p class="service-card__text">
+                Hospedagem aconchegante com câmeras 24h, alimentação, banhos e
+                muito amor durante a ausência dos tutores.
+              </p>
+              <div class="service-card__price">
+                <span class="service-card__price-label">A partir de</span>
+                <span class="service-card__price-value">R$ 70</span>
+                <span style="font-size: 0.75rem; color: var(--color-text-muted)"
+                  >/dia</span
+                >
+              </div>
+              <a href="#contato" class="service-card__link">
+                Reservar
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+
+            <article
+              class="service-card"
+              data-reveal="fade-up"
+              data-reveal-delay="300"
+            >
+              <div class="service-card__icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <h3 class="service-card__title">Day Care</h3>
+              <p class="service-card__text">
+                Creche diurna com atividades lúdicas, socialização
+                supervisionada e muito movimento para seu pet gastar energia.
+              </p>
+              <div class="service-card__price">
+                <span class="service-card__price-label">A partir de</span>
+                <span class="service-card__price-value">R$ 50</span>
+                <span style="font-size: 0.75rem; color: var(--color-text-muted)"
+                  >/dia</span
+                >
+              </div>
+              <a href="#contato" class="service-card__link">
+                Saber mais
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="fade-up"
+              data-reveal-delay="350"
+            >
+              <div class="service-card__icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-taxi"></i>
+              </div>
+              <h3 class="service-card__title">Táxi Pet</h3>
+              <p class="service-card__text">
+                Transporte seguro e confortável com veículos adaptados e
+                profissionais habilitados para o transporte de pets.
+              </p>
+              <div class="service-card__price">
+                <span class="service-card__price-label">A partir de</span>
+                <span class="service-card__price-value">R$ 35</span>
+              </div>
+              <a href="#contato" class="service-card__link">
+                Solicitar
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="fade-up"
+              data-reveal-delay="400"
+            >
+              <div class="service-card__icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h3 class="service-card__title">Adestramento</h3>
+              <p class="service-card__text">
+                Treinamento com reforço positivo para desenvolver obediência
+                básica, comportamento e socialização canina.
+              </p>
+              <div class="service-card__price">
+                <span class="service-card__price-label">A partir de</span>
+                <span class="service-card__price-value">R$ 200</span>
+              </div>
+              <a href="#contato" class="service-card__link">
+                Saber mais
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+            <article
+              class="service-card"
+              data-reveal="fade-up"
+              data-reveal-delay="450"
+            >
+              <span class="service-card__badge">Novo</span>
+              <div class="service-card__icon-wrap" aria-hidden="true">
+                <i class="fa-solid fa-spa"></i>
+              </div>
+              <h3 class="service-card__title">Pet Spa</h3>
+              <p class="service-card__text">
+                Experiência de relaxamento completa com hidratação,
+                aromaterapia, massagem relaxante e embelezamento especial.
+              </p>
+              <div class="service-card__price">
+                <span class="service-card__price-label">A partir de</span>
+                <span class="service-card__price-value">R$ 150</span>
+              </div>
+              <a href="#contato" class="service-card__link">
+                Conhecer
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="promo-banner" aria-label="Promoção para novos clientes">
+        <div
+          class="promo-banner__bg-shape promo-banner__bg-shape--1"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="promo-banner__bg-shape promo-banner__bg-shape--2"
+          aria-hidden="true"
+        ></div>
+
+        <div class="container">
+          <div class="promo-banner__inner">
+            <div class="promo-banner__badge" aria-hidden="true">
+              <i class="fa-solid fa-gift"></i>
+            </div>
+
+            <div class="promo-banner__content" data-reveal="fade-right">
+              <p class="promo-banner__discount">20% <span>OFF</span></p>
+              <h2 class="promo-banner__title">Para novos clientes!</h2>
+              <p class="promo-banner__subtitle">
+                Aproveite o desconto especial de boas-vindas na primeira visita
+                ao Pet Love. Válido para banho, tosa e consultas.
+              </p>
+            </div>
+
+            <div class="promo-banner__code" data-reveal="fade-left">
+              <span class="promo-banner__code-label">Use o cupom:</span>
+              <button
+                class="promo-banner__code-value"
+                data-code="PETLOVE20"
+                aria-label="Clique para copiar o código PETLOVE20"
+                title="Clique para copiar"
+              >
+                <i class="fa-regular fa-copy" aria-hidden="true"></i>
+                PETLOVE20
+              </button>
+              <a href="#contato" class="btn btn--white"> Resgatar agora </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="produtos"
+        class="section products"
+        aria-labelledby="products-title"
+      >
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">Nossa loja</p>
+            <h2 id="products-title" class="section__title">
+              Produtos <span>premium</span> para seu pet
+            </h2>
+            <p class="section__subtitle">
+              Selecionamos os melhores produtos das marcas mais reconhecidas do
+              mercado para a saúde e felicidade do seu animal.
+            </p>
+          </header>
+          <div
+            class="products__filters"
+            role="group"
+            aria-label="Filtrar produtos por categoria"
+          >
+            <button class="filter-btn is-active" data-filter="all">
+              Todos
+            </button>
+            <button class="filter-btn" data-filter="racao">Rações</button>
+            <button class="filter-btn" data-filter="acessorios">
+              Acessórios
+            </button>
+            <button class="filter-btn" data-filter="brinquedos">
+              Brinquedos
+            </button>
+            <button class="filter-btn" data-filter="camas">Caminhas</button>
+            <button class="filter-btn" data-filter="higiene">Higiene</button>
+            <button class="filter-btn" data-filter="petiscos">Petiscos</button>
+          </div>
+
+          <div class="products__grid">
+            <article
+              class="product-card"
+              data-category="racao"
+              data-reveal="fade-up"
+              data-reveal-delay="100"
+            >
+              <div class="product-card__image-wrap">
+                <div class="product-card__image-placeholder" aria-hidden="true">
+                  <i class="fa-solid fa-bone"></i>
+                </div>
+                <span class="product-card__tag product-card__tag--best"
+                  >Mais Vendido</span
+                >
+                <div class="product-card__actions" aria-hidden="true">
+                  <button class="product-card__action-btn" title="Favoritar">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-card__action-btn" title="Ver detalhes">
+                    <i class="fa-regular fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Ração</p>
+                <h3 class="product-card__name">
+                  Ração Premium Adulto Frango 15kg
+                </h3>
+                <div class="product-card__rating">
+                  <div class="stars" aria-label="4.8 estrelas de 5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="product-card__rating-count">(342)</span>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__pricing">
+                    <span class="product-card__price-old">R$ 189,90</span>
+                    <span class="product-card__price-current">R$ 159,90</span>
+                  </div>
+                  <button
+                    class="product-card__cart-btn"
+                    aria-label="Adicionar ao carrinho"
+                  >
+                    <i class="fa-solid fa-cart-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="acessorios"
+              data-reveal="fade-up"
+              data-reveal-delay="150"
+            >
+              <div class="product-card__image-wrap">
+                <div class="product-card__image-placeholder" aria-hidden="true">
+                  <i class="fa-solid fa-dog"></i>
+                </div>
+                <span class="product-card__tag product-card__tag--new"
+                  >Novo</span
+                >
+                <div class="product-card__actions" aria-hidden="true">
+                  <button class="product-card__action-btn" title="Favoritar">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-card__action-btn" title="Ver detalhes">
+                    <i class="fa-regular fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Acessórios</p>
+                <h3 class="product-card__name">
+                  Coleira Antipulgas Ajustável Refletiva
+                </h3>
+                <div class="product-card__rating">
+                  <div class="stars" aria-label="4.7 estrelas de 5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="product-card__rating-count">(128)</span>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__pricing">
+                    <span class="product-card__price-old">R$ 89,90</span>
+                    <span class="product-card__price-current">R$ 69,90</span>
+                  </div>
+                  <button
+                    class="product-card__cart-btn"
+                    aria-label="Adicionar ao carrinho"
+                  >
+                    <i class="fa-solid fa-cart-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="brinquedos"
+              data-reveal="fade-up"
+              data-reveal-delay="200"
+            >
+              <div class="product-card__image-wrap">
+                <div class="product-card__image-placeholder" aria-hidden="true">
+                  <i class="fa-solid fa-baseball"></i>
+                </div>
+                <div class="product-card__actions" aria-hidden="true">
+                  <button class="product-card__action-btn" title="Favoritar">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-card__action-btn" title="Ver detalhes">
+                    <i class="fa-regular fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Brinquedos</p>
+                <h3 class="product-card__name">
+                  Kit Brinquedos Interativos para Cães 5 peças
+                </h3>
+                <div class="product-card__rating">
+                  <div class="stars" aria-label="5 estrelas de 5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="product-card__rating-count">(87)</span>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__pricing">
+                    <span class="product-card__price-old"></span>
+                    <span class="product-card__price-current">R$ 49,90</span>
+                  </div>
+                  <button
+                    class="product-card__cart-btn"
+                    aria-label="Adicionar ao carrinho"
+                  >
+                    <i class="fa-solid fa-cart-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="camas"
+              data-reveal="fade-up"
+              data-reveal-delay="100"
+            >
+              <div class="product-card__image-wrap">
+                <div class="product-card__image-placeholder" aria-hidden="true">
+                  <i class="fa-solid fa-bed"></i>
+                </div>
+                <span class="product-card__tag product-card__tag--sale"
+                  >-30%</span
+                >
+                <div class="product-card__actions" aria-hidden="true">
+                  <button class="product-card__action-btn" title="Favoritar">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-card__action-btn" title="Ver detalhes">
+                    <i class="fa-regular fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Caminhas</p>
+                <h3 class="product-card__name">
+                  Caminha Ortopédica Luxo Tamanho G
+                </h3>
+                <div class="product-card__rating">
+                  <div class="stars" aria-label="4.9 estrelas de 5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="product-card__rating-count">(203)</span>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__pricing">
+                    <span class="product-card__price-old">R$ 299,90</span>
+                    <span class="product-card__price-current">R$ 209,90</span>
+                  </div>
+                  <button
+                    class="product-card__cart-btn"
+                    aria-label="Adicionar ao carrinho"
+                  >
+                    <i class="fa-solid fa-cart-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="higiene"
+              data-reveal="fade-up"
+              data-reveal-delay="150"
+            >
+              <div class="product-card__image-wrap">
+                <div class="product-card__image-placeholder" aria-hidden="true">
+                  <i class="fa-solid fa-pump-soap"></i>
+                </div>
+                <div class="product-card__actions" aria-hidden="true">
+                  <button class="product-card__action-btn" title="Favoritar">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-card__action-btn" title="Ver detalhes">
+                    <i class="fa-regular fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Higiene</p>
+                <h3 class="product-card__name">
+                  Shampoo Pelos Sensíveis Aveia & Aloe 500ml
+                </h3>
+                <div class="product-card__rating">
+                  <div class="stars" aria-label="4.6 estrelas de 5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <span class="product-card__rating-count">(156)</span>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__pricing">
+                    <span class="product-card__price-old"></span>
+                    <span class="product-card__price-current">R$ 34,90</span>
+                  </div>
+                  <button
+                    class="product-card__cart-btn"
+                    aria-label="Adicionar ao carrinho"
+                  >
+                    <i class="fa-solid fa-cart-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-category="petiscos"
+              data-reveal="fade-up"
+              data-reveal-delay="200"
+            >
+              <div class="product-card__image-wrap">
+                <div class="product-card__image-placeholder" aria-hidden="true">
+                  <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <span class="product-card__tag product-card__tag--best"
+                  >Top Seller</span
+                >
+                <div class="product-card__actions" aria-hidden="true">
+                  <button class="product-card__action-btn" title="Favoritar">
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                  <button class="product-card__action-btn" title="Ver detalhes">
+                    <i class="fa-regular fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product-card__body">
+                <p class="product-card__category">Petiscos</p>
+                <h3 class="product-card__name">
+                  Petisco Natural Bifinho Frango sem Corantes 250g
+                </h3>
+                <div class="product-card__rating">
+                  <div class="stars" aria-label="5 estrelas de 5">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <span class="product-card__rating-count">(421)</span>
+                </div>
+                <div class="product-card__footer">
+                  <div class="product-card__pricing">
+                    <span class="product-card__price-old">R$ 29,90</span>
+                    <span class="product-card__price-current">R$ 24,90</span>
+                  </div>
+                  <button
+                    class="product-card__cart-btn"
+                    aria-label="Adicionar ao carrinho"
+                  >
+                    <i class="fa-solid fa-cart-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="products__cta" data-reveal="fade-up">
+            <a href="#contato" class="btn btn--secondary btn--lg">
+              <i class="fa-solid fa-store" aria-hidden="true"></i>
+              Ver todos os produtos
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        id="galeria"
+        class="section gallery"
+        aria-labelledby="gallery-title"
+      >
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">Momentos especiais</p>
+            <h2 id="gallery-title" class="section__title">
+              Nossos pets <span>mais felizes</span>
+            </h2>
+            <p class="section__subtitle">
+              Cada visita é uma nova história de amor. Confira os momentos que
+              registramos no dia a dia do Pet Love.
+            </p>
+          </header>
+
+          <div class="gallery__grid">
+            <div
+              class="gallery-item"
+              role="button"
+              tabindex="0"
+              aria-label="Foto de cachorro"
+            >
+              <div class="gallery-item__placeholder" aria-hidden="true">
+                <i class="fa-solid fa-dog"></i>
+              </div>
+              <img
+                data-src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800&q=80"
+                alt="Cachorro feliz no pet shop"
+                class="gallery-item__img"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <div class="gallery-item__zoom" aria-hidden="true">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item"
+              role="button"
+              tabindex="0"
+              aria-label="Foto de gato"
+            >
+              <div class="gallery-item__placeholder" aria-hidden="true">
+                <i class="fa-solid fa-cat"></i>
+              </div>
+              <img
+                data-src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80"
+                alt="Gato relaxando"
+                class="gallery-item__img"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <div class="gallery-item__zoom" aria-hidden="true">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item"
+              role="button"
+              tabindex="0"
+              aria-label="Foto de cachorro"
+            >
+              <div class="gallery-item__placeholder" aria-hidden="true">
+                <i class="fa-solid fa-dog"></i>
+              </div>
+              <img
+                data-src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&w=600&q=80"
+                alt="Cachorro durante o banho"
+                class="gallery-item__img"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <div class="gallery-item__zoom" aria-hidden="true">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item"
+              role="button"
+              tabindex="0"
+              aria-label="Foto de cachorros"
+            >
+              <div class="gallery-item__placeholder" aria-hidden="true">
+                <i class="fa-solid fa-paw"></i>
+              </div>
+              <img
+                data-src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=600&q=80"
+                alt="Cachorros brincando"
+                class="gallery-item__img"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <div class="gallery-item__zoom" aria-hidden="true">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item"
+              role="button"
+              tabindex="0"
+              aria-label="Dois pets juntos"
+            >
+              <div class="gallery-item__placeholder" aria-hidden="true">
+                <i class="fa-solid fa-dog"></i><i class="fa-solid fa-cat"></i>
+              </div>
+              <img
+                data-src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800&q=80"
+                alt="Cachorro e gato deitados juntos"
+                class="gallery-item__img"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <div class="gallery-item__zoom" aria-hidden="true">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item"
+              role="button"
+              tabindex="0"
+              aria-label="Foto de gato"
+            >
+              <div class="gallery-item__placeholder" aria-hidden="true">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <img
+                data-src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=600&q=80"
+                alt="Gato curioso"
+                class="gallery-item__img"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <div class="gallery-item__zoom" aria-hidden="true">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item"
+              role="button"
+              tabindex="0"
+              aria-label="Cachorro após banho e tosa"
+            >
+              <div class="gallery-item__placeholder" aria-hidden="true">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <img
+                data-src="https://images.unsplash.com/photo-1611173622933-91942d394b04?auto=format&fit=crop&w=600&q=80"
+                alt="Cachorro após banho e tosa"
+                class="gallery-item__img"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <div class="gallery-item__zoom" aria-hidden="true">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lightbox"
+          role="dialog"
+          aria-label="Visualizador de fotos"
+          aria-modal="true"
+        >
+          <div class="lightbox__overlay"></div>
+          <button class="lightbox__close" aria-label="Fechar">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+          <button
+            class="lightbox__nav lightbox__nav--prev"
+            aria-label="Foto anterior"
+          >
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <button
+            class="lightbox__nav lightbox__nav--next"
+            aria-label="Próxima foto"
+          >
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+          <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__img" />
+          </div>
+        </div>
+      </section>
+      <section
+        id="depoimentos"
+        class="section testimonials"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">Quem já conhece</p>
+            <h2 id="testimonials-title" class="section__title">
+              O que nossos <span>clientes dizem</span>
+            </h2>
+            <p class="section__subtitle">
+              Mais de 5.000 tutores felizes com o atendimento e cuidado que seus
+              pets recebem no Pet Love.
+            </p>
+          </header>
+
+          <div class="testimonials__slider" data-slider>
+            <div class="testimonials__track-wrap">
+              <div class="testimonials__track" data-slider-track>
+                <article class="testimonial-card" data-slider-item>
+                  <div class="testimonial-card__quote-icon" aria-hidden="true">
+                    "
+                  </div>
+                  <div class="testimonial-card__stars" aria-label="5 estrelas">
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-card__text">
+                    Meu cachorro sempre fica ansioso em pet shops, mas aqui ele
+                    ficou super tranquilo desde o primeiro dia. A equipe é
+                    incrível e o resultado do banho foi impecável. Super
+                    recomendo!
+                  </p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar" aria-hidden="true">
+                      AM
+                    </div>
+                    <div class="testimonial-card__info">
+                      <span class="testimonial-card__name"
+                        >Ana Maria Silva</span
+                      >
+                      <span class="testimonial-card__pet">
+                        <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                        Tutora do Thor, Golden Retriever
+                      </span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonial-card" data-slider-item>
+                  <div class="testimonial-card__quote-icon" aria-hidden="true">
+                    "
+                  </div>
+                  <div class="testimonial-card__stars" aria-label="5 estrelas">
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-card__text">
+                    Deixei minha gata no hotelzinho por 10 dias e fiquei
+                    encantada. Recebi fotos e atualizações todos os dias. Ela
+                    voltou ainda mais feliz do que foi. Melhor pet shop que já
+                    conheci!
+                  </p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar" aria-hidden="true">
+                      CF
+                    </div>
+                    <div class="testimonial-card__info">
+                      <span class="testimonial-card__name">Carla Ferreira</span>
+                      <span class="testimonial-card__pet">
+                        <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                        Tutora da Luna, Gata Persa
+                      </span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonial-card" data-slider-item>
+                  <div class="testimonial-card__quote-icon" aria-hidden="true">
+                    "
+                  </div>
+                  <div class="testimonial-card__stars" aria-label="5 estrelas">
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-card__text">
+                    O veterinário foi extremamente atencioso e explicou tudo com
+                    paciência. O diagnóstico foi preciso e o tratamento
+                    funcionou perfeitamente. Profissionalismo de alto nível.
+                  </p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar" aria-hidden="true">
+                      RL
+                    </div>
+                    <div class="testimonial-card__info">
+                      <span class="testimonial-card__name">Roberto Lima</span>
+                      <span class="testimonial-card__pet">
+                        <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                        Tutor do Max, Bulldog Francês
+                      </span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonial-card" data-slider-item>
+                  <div class="testimonial-card__quote-icon" aria-hidden="true">
+                    "
+                  </div>
+                  <div class="testimonial-card__stars" aria-label="5 estrelas">
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i
+                      class="testimonial-card__star fa-solid fa-star-half-stroke"
+                    ></i>
+                  </div>
+                  <p class="testimonial-card__text">
+                    Trouxe meu poodle para o Pet Spa e foi uma experiência
+                    incrível! Ele ficou cheiroso, relaxado e com os pêlos
+                    lindos. Já agendei para o próximo mês. Atendimento nota 10!
+                  </p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar" aria-hidden="true">
+                      JS
+                    </div>
+                    <div class="testimonial-card__info">
+                      <span class="testimonial-card__name">Juliana Santos</span>
+                      <span class="testimonial-card__pet">
+                        <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                        Tutora do Bolinha, Poodle
+                      </span>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="testimonial-card" data-slider-item>
+                  <div class="testimonial-card__quote-icon" aria-hidden="true">
+                    "
+                  </div>
+                  <div class="testimonial-card__stars" aria-label="5 estrelas">
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                    <i class="testimonial-card__star fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-card__text">
+                    O serviço de táxi pet foi um diferencial incrível. Não
+                    precisei me preocupar com transporte e meu cachorro chegou
+                    calmo e bem cuidado. Estrutura impecável e equipe dedicada!
+                  </p>
+                  <div class="testimonial-card__author">
+                    <div class="testimonial-card__avatar" aria-hidden="true">
+                      MC
+                    </div>
+                    <div class="testimonial-card__info">
+                      <span class="testimonial-card__name">Marcos Costa</span>
+                      <span class="testimonial-card__pet">
+                        <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                        Tutor do Simba, Labrador
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <div class="testimonials__controls">
+              <button
+                class="testimonials__btn"
+                data-slider-prev
+                aria-label="Depoimento anterior"
+              >
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <div class="testimonials__dots" data-slider-dots></div>
+              <button
+                class="testimonials__btn"
+                data-slider-next
+                aria-label="Próximo depoimento"
+              >
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" class="section faq" aria-labelledby="faq-title">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">Dúvidas frequentes</p>
+            <h2 id="faq-title" class="section__title">
+              Perguntas <span>frequentes</span>
+            </h2>
+            <p class="section__subtitle">
+              Reunimos as respostas para as dúvidas mais comuns dos tutores. Não
+              encontrou o que procura? Entre em contato!
+            </p>
+          </header>
+
+          <div class="faq__list" data-reveal="fade-up">
+            <div class="faq-item">
+              <button class="faq-item__trigger" aria-expanded="false">
+                <span class="faq-item__question">
+                  Quanto tempo dura o serviço de banho e tosa?
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+              <div class="faq-item__body">
+                <p class="faq-item__answer">
+                  O tempo varia conforme o porte e a raça do pet. Em média, cães
+                  de porte pequeno ficam de 1,5 a 2 horas; porte médio, de 2 a 3
+                  horas; e porte grande, de 3 a 4 horas. Gatos costumam ficar de
+                  1,5 a 2,5 horas. Ao agendar, nossa equipe informa o tempo
+                  estimado para o seu pet.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__trigger" aria-expanded="false">
+                <span class="faq-item__question">
+                  Meu pet precisa estar vacinado para usar os serviços?
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+              <div class="faq-item__body">
+                <p class="faq-item__answer">
+                  Sim! Por questão de saúde e segurança de todos os animais,
+                  exigimos a carteirinha de vacinação atualizada para serviços
+                  de banho, tosa, hotelzinho e day care. As vacinas mínimas
+                  exigidas são: Polivalente/V10, Antirrábica e Gripe
+                  (Bordetella). Não se preocupe — se seu pet precisar de
+                  vacinas, também oferecemos esse serviço aqui!
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__trigger" aria-expanded="false">
+                <span class="faq-item__question">
+                  Posso acompanhar meu pet durante os serviços?
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+              <div class="faq-item__body">
+                <p class="faq-item__answer">
+                  Para banho, tosa e procedimentos veterinários, a presença do
+                  tutor na área de atendimento não é recomendada, pois pode
+                  aumentar a ansiedade do pet. Mas você pode acompanhar pela
+                  câmera ao vivo pelo nosso aplicativo ou receber fotos e vídeos
+                  durante o processo! No hotelzinho, há câmeras 24h acessíveis
+                  pelos tutores.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__trigger" aria-expanded="false">
+                <span class="faq-item__question">
+                  Como funciona o serviço de hotelzinho?
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+              <div class="faq-item__body">
+                <p class="faq-item__answer">
+                  No hotelzinho, seu pet fica hospedado em um espaço
+                  aconchegante com cama, alimentação (da marca que você
+                  preferir), banho incluído, atividades lúdicas e muito carinho.
+                  Nossa equipe está presente 24 horas. Você recebe atualizações
+                  diárias com fotos. O valor é a partir de R$ 70/dia e inclui
+                  uma refeição. Consultas veterinárias de emergência são
+                  realizadas sem custo adicional durante a hospedagem.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__trigger" aria-expanded="false">
+                <span class="faq-item__question">
+                  Vocês atendem fins de semana e feriados?
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+              <div class="faq-item__body">
+                <p class="faq-item__answer">
+                  Sim! Funcionamos de segunda a sábado das 8h às 18h e aos
+                  domingos das 9h às 15h. Em feriados, abrimos com horário
+                  reduzido (9h às 14h), mas a equipe do hotelzinho está presente
+                  24/7 para cuidar dos pets hospedados. Recomendamos agendar com
+                  antecedência para os finais de semana e datas comemorativas.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-item__trigger" aria-expanded="false">
+                <span class="faq-item__question">
+                  Quais formas de pagamento são aceitas?
+                </span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+              </button>
+              <div class="faq-item__body">
+                <p class="faq-item__answer">
+                  Aceitamos dinheiro, PIX (com 5% de desconto), cartões de
+                  débito e crédito das principais bandeiras (Visa, Mastercard,
+                  Elo, American Express) em até 6x sem juros. Para o hotelzinho,
+                  solicitamos 50% de entrada no momento do check-in.
+                  Parcelamentos especiais podem ser negociados para pacotes de
+                  serviços.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contato"
+        class="section contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">Fale conosco</p>
+            <h2 id="contact-title" class="section__title">
+              Pronto para <span>agendar</span>?
+            </h2>
+            <p class="section__subtitle">
+              Entre em contato e nossa equipe responderá em menos de 24 horas.
+            </p>
+          </header>
+
+          <div class="contact__inner">
+            <div class="contact__info" data-reveal="fade-right">
+              <div>
+                <h3 class="contact__info-title">
+                  Cuide do seu pet<br /><span>com a gente</span>
+                  <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                </h3>
+                <p class="contact__info-subtitle">
+                  Nossa equipe está pronta para tirar dúvidas, fazer
+                  agendamentos e indicar os melhores serviços para o seu
+                  companheiro.
+                </p>
+              </div>
+
+              <div class="contact__details">
+                <div class="contact-detail">
+                  <div class="contact-detail__icon" aria-hidden="true">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="contact-detail__content">
+                    <span class="contact-detail__label">Endereço</span>
+                    <span class="contact-detail__value">
+                      Av. Vinte e Nove de Dezembro, 465 — Vila Nova<br />
+                      Capitão Poço, PA — CEP 68650-000
+                    </span>
+                  </div>
+                </div>
+
+                <div class="contact-detail">
+                  <div class="contact-detail__icon" aria-hidden="true">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="contact-detail__content">
+                    <span class="contact-detail__label"
+                      >Telefone / WhatsApp</span
+                    >
+                    <span class="contact-detail__value">(11) 99999-0000</span>
+                  </div>
+                </div>
+
+                <div class="contact-detail">
+                  <div class="contact-detail__icon" aria-hidden="true">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="contact-detail__content">
+                    <span class="contact-detail__label">E-mail</span>
+                    <span class="contact-detail__value"
+                      >paulaufra@gmail.com</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact__hours">
+                <h4 class="contact__hours-title">Horário de Funcionamento</h4>
+                <div class="hours-row">
+                  <span class="hours-row__day">Segunda a Sexta</span>
+                  <span class="hours-row__time">8h às 18h</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-row__day">Sábado</span>
+                  <span class="hours-row__time">8h às 17h</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-row__day">Domingo</span>
+                  <span class="hours-row__time">9h às 15h</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-row__day">Feriados</span>
+                  <span class="hours-row__time">9h às 14h</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact__form-wrap" data-reveal="fade-left">
+              <h3 class="contact__form-title">Envie uma mensagem</h3>
+              <p class="contact__form-subtitle">
+                Preencha o formulário e retornamos em breve.
+              </p>
+
+              <form class="form" data-contact-form novalidate>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="contact-name">
+                      Nome <span aria-hidden="true">*</span>
+                    </label>
+                    <div class="form__input-wrap">
+                      <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        class="form__input"
+                        placeholder="Seu nome completo"
+                        autocomplete="name"
+                        data-validate="name"
+                        aria-required="true"
+                        aria-describedby="name-message"
+                      />
+                      <i
+                        class="fa-solid fa-user form__icon"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span
+                      id="name-message"
+                      class="form__message"
+                      role="alert"
+                    ></span>
+                  </div>
+
+                  <div class="form__group">
+                    <label class="form__label" for="contact-email">
+                      E-mail <span aria-hidden="true">*</span>
+                    </label>
+                    <div class="form__input-wrap">
+                      <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        class="form__input"
+                        placeholder="seu@email.com"
+                        autocomplete="email"
+                        data-validate="email"
+                        aria-required="true"
+                        aria-describedby="email-message"
+                      />
+                      <i
+                        class="fa-solid fa-envelope form__icon"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <span
+                      id="email-message"
+                      class="form__message"
+                      role="alert"
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="contact-phone"
+                    >Telefone / WhatsApp</label
+                  >
+                  <div class="form__input-wrap">
+                    <input
+                      type="tel"
+                      id="contact-phone"
+                      name="phone"
+                      class="form__input"
+                      placeholder="(00) 00000-0000"
+                      autocomplete="tel"
+                      data-validate="phone"
+                      data-mask="phone"
+                      aria-describedby="phone-message"
+                    />
+                    <i
+                      class="fa-solid fa-phone form__icon"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <span
+                    id="phone-message"
+                    class="form__message"
+                    role="alert"
+                  ></span>
+                </div>
+
+                <div class="form__group">
+                  <label class="form__label" for="contact-message">
+                    Mensagem <span aria-hidden="true">*</span>
+                  </label>
+                  <div class="form__input-wrap form__textarea-wrap">
+                    <textarea
+                      id="contact-message"
+                      name="message"
+                      class="form__input form__input--textarea"
+                      placeholder="Conte-nos sobre seu pet e o que precisa…"
+                      rows="5"
+                      data-validate="message"
+                      aria-required="true"
+                      aria-describedby="message-message"
+                    ></textarea>
+                    <i
+                      class="fa-solid fa-comment form__icon"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <span
+                    id="message-message"
+                    class="form__message"
+                    role="alert"
+                  ></span>
+                </div>
+
+                <div class="form__submit">
+                  <button type="submit" class="btn btn--primary btn--lg">
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                    Enviar mensagem
+                  </button>
+                </div>
+
+                <div class="form__toast" role="alert" aria-live="polite">
+                  <span class="form__toast-icon" aria-hidden="true"
+                    ><i class="fa-solid fa-circle-check"></i
+                  ></span>
+                  <div>
+                    <strong>Mensagem enviada com sucesso!</strong><br />
+                    Retornamos em até 24 horas. Obrigado por entrar em contato!
+                    <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__brand">
+              <a href="#inicio" class="footer__logo header__logo">
+                <div class="logo__icon">
+                  <i class="fa-solid fa-paw" aria-hidden="true"></i>
+                </div>
+                <div class="logo__text">
+                  <span class="logo__name">Pet <span>Love</span></span>
+                  <span class="logo__tagline">Pet Shop & Vet</span>
+                </div>
+              </a>
+              <p class="footer__brand-text">
+                O Pet Love nasceu da paixão por animais e do desejo de oferecer
+                o melhor cuidado para os companheiros que tanto amamos.
+                Atendimento humanizado desde 2016.
+              </p>
+              <div class="footer__socials">
+                <a
+                  href="#"
+                  class="footer__social-link"
+                  aria-label="Instagram do Pet Love"
+                >
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="#"
+                  class="footer__social-link"
+                  aria-label="Facebook do Pet Love"
+                >
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="#"
+                  class="footer__social-link"
+                  aria-label="WhatsApp do Pet Love"
+                >
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="#"
+                  class="footer__social-link"
+                  aria-label="TikTok do Pet Love"
+                >
+                  <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="#"
+                  class="footer__social-link"
+                  aria-label="YouTube do Pet Love"
+                >
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__col-title">Links Rápidos</h4>
+              <ul class="footer__links" role="list">
+                <li>
+                  <a href="#inicio" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Início
+                  </a>
+                </li>
+                <li>
+                  <a href="#servicos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Serviços
+                  </a>
+                </li>
+                <li>
+                  <a href="#produtos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Produtos
+                  </a>
+                </li>
+                <li>
+                  <a href="#galeria" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Galeria
+                  </a>
+                </li>
+                <li>
+                  <a href="#depoimentos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Depoimentos
+                  </a>
+                </li>
+                <li>
+                  <a href="#faq" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Serviços -->
+            <div class="footer__col">
+              <h4 class="footer__col-title">Serviços</h4>
+              <ul class="footer__links" role="list">
+                <li>
+                  <a href="#servicos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Banho e Tosa
+                  </a>
+                </li>
+                <li>
+                  <a href="#servicos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Consulta Veterinária
+                  </a>
+                </li>
+                <li>
+                  <a href="#servicos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Vacinação
+                  </a>
+                </li>
+                <li>
+                  <a href="#servicos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Hotelzinho
+                  </a>
+                </li>
+                <li>
+                  <a href="#servicos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Day Care
+                  </a>
+                </li>
+                <li>
+                  <a href="#servicos" class="footer__link">
+                    <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    Pet Spa
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__col-title">Newsletter</h4>
+              <div class="footer__newsletter">
+                <p class="footer__newsletter-text">
+                  Receba dicas de cuidados, promoções exclusivas e novidades
+                  diretamente no seu e-mail.
+                </p>
+                <div class="footer__newsletter-form">
+                  <input
+                    type="email"
+                    class="footer__newsletter-input"
+                    placeholder="Seu melhor e-mail"
+                    aria-label="Seu e-mail para a newsletter"
+                  />
+                  <button
+                    class="footer__newsletter-btn"
+                    aria-label="Assinar newsletter"
+                  >
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p class="footer__copy">
+              © 2025 <a href="#inicio">Pet Love</a>. Todos os direitos
+              reservados. Feito com
+              <i class="fa-solid fa-heart" aria-hidden="true"></i> para os
+              amantes de pets.
+            </p>
+            <div class="footer__bottom-links">
+              <a href="#" class="footer__bottom-link"
+                >Política de Privacidade</a
+              >
+              <a href="#" class="footer__bottom-link">Termos de Uso</a>
+              <a href="#" class="footer__bottom-link">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button
+      class="back-to-top"
+      aria-label="Voltar ao topo da página"
+      title="Voltar ao topo"
+    >
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

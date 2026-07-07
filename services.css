@@ -1,0 +1,284 @@
+/* ============================================================
+   SERVICES.CSS — Services Section
+   ============================================================ */
+
+.services {
+  background-color: var(--color-white);
+}
+
+/* ── Grid de Serviços ───────────────────────────────────── */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+/* ── Card de Serviço ────────────────────────────────────── */
+.service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+  border-radius: var(--radius-2xl);
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-border-light);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform var(--transition-slow),
+    box-shadow var(--transition-slow),
+    border-color var(--transition-slow);
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-bg) 0%,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-slow);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+/* ── Ícone ──────────────────────────────────────────────── */
+.service-card__icon-wrap {
+  position: relative;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: var(--space-5);
+  box-shadow: 0 8px 24px rgba(255, 140, 66, 0.28);
+  transition: transform var(--transition-slow);
+}
+
+.service-card__icon-wrap i {
+  color: var(--color-white);
+  font-size: 1.9rem;
+}
+
+.service-card:hover .service-card__icon-wrap {
+  transform: scale(1.1) rotate(-6deg);
+}
+
+/* ── Conteúdo ───────────────────────────────────────────── */
+.service-card__title {
+  position: relative;
+  z-index: 1;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.service-card__text {
+  position: relative;
+  z-index: 1;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-5);
+}
+
+.service-card__price {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-primary);
+}
+
+.service-card__price-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+}
+
+.service-card__price-value {
+  font-size: var(--font-size-2xl);
+}
+
+.service-card__link {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition:
+    border-color var(--transition-fast),
+    gap var(--transition-fast);
+}
+
+.service-card__link:hover {
+  border-color: var(--color-primary);
+  gap: var(--space-3);
+}
+
+/* ── Tag popular ─────────────────────────────────────────── */
+.service-card__badge {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  padding: var(--space-1) var(--space-2);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+  color: var(--color-white);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+/* ── Banner Promocional ─────────────────────────────────── */
+.promo-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ff8c42 0%, #ff6b1a 50%, #e85a00 100%);
+  padding-block: var(--space-16);
+}
+
+.promo-banner__bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.promo-banner__bg-shape--1 {
+  width: 400px;
+  height: 400px;
+  background: var(--color-white);
+  top: -200px;
+  right: 10%;
+}
+
+.promo-banner__bg-shape--2 {
+  width: 250px;
+  height: 250px;
+  background: var(--color-white);
+  bottom: -100px;
+  left: 5%;
+}
+
+.promo-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+}
+
+.promo-banner__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-size: 2.5rem;
+  color: var(--color-white);
+}
+
+.promo-banner__content {
+  flex: 1;
+}
+
+.promo-banner__discount {
+  font-size: clamp(var(--font-size-4xl), 6vw, 5rem);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-white);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.promo-banner__discount span {
+  opacity: 0.75;
+  font-size: 60%;
+}
+
+.promo-banner__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  margin-bottom: var(--space-2);
+}
+
+.promo-banner__subtitle {
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.promo-banner__code {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.promo-banner__code-label {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.promo-banner__code-value {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-5);
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-white);
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.promo-banner__code-value:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
