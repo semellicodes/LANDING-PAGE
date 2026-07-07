@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  grid-auto-flow: dense;
   gap: var(--space-4);
 }
 
@@ -32,7 +33,6 @@
   padding-top: 100%;
 }
 
-.gallery-item:nth-child(1)::after,
 .gallery-item:nth-child(5)::after {
   padding-top: 50%;
 }
