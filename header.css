@@ -175,7 +175,7 @@
   background-color: var(--color-white);
 }
 
-/* Estado aberto do hamburger */
+
 .menu-toggle.is-active .menu-toggle__bar:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }

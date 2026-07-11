@@ -1,6 +1,4 @@
-/* ============================================================
-   SCROLL.JS — Smooth Scroll & Header Scroll Behavior
-   ============================================================ */
+
 
 const SCROLL_THRESHOLD = 80;
 
@@ -9,7 +7,7 @@ export function initScroll() {
     initHeaderScrollBehavior();
 }
 
-/* ── Smooth Scroll nos links âncora ────────────────────── */
+
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (event) => {
@@ -32,7 +30,7 @@ function initSmoothScroll() {
     });
 }
 
-/* ── Header muda ao fazer scroll ────────────────────────── */
+
 function initHeaderScrollBehavior() {
     const header = document.querySelector('.header');
     if (!header) return;
@@ -62,11 +60,10 @@ function initHeaderScrollBehavior() {
         }
     }, { passive: true });
 
-    // Estado inicial
     updateHeader();
 }
 
-/* ── Utilitário: altura do header ───────────────────────── */
+
 function getHeaderHeight() {
     const header = document.querySelector('.header');
     return header ? header.offsetHeight : 0;

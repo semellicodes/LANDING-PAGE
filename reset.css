@@ -1,6 +1,4 @@
-/* ============================================================
-   RESET.CSS — Normalize & Reset Browser Defaults
-   ============================================================ */
+
 
 *,
 *::before,
@@ -79,20 +77,20 @@ fieldset {
     border: none;
 }
 
-/* ── Focus Visible ──────────────────────────────────────── */
+
 :focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 3px;
     border-radius: var(--radius-sm);
 }
 
-/* ── Selection ──────────────────────────────────────────── */
+
 ::selection {
     background-color: var(--color-primary);
     color: var(--color-white);
 }
 
-/* ── Scrollbar ──────────────────────────────────────────── */
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -106,7 +104,7 @@ fieldset {
     border-radius: var(--radius-full);
 }
 
-/* ── Reduced Motion ─────────────────────────────────────── */
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

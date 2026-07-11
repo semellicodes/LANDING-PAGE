@@ -1,6 +1,4 @@
-/* ============================================================
-   SLIDER.JS — Testimonials Auto-Playing Carousel
-   ============================================================ */
+
 
 const AUTOPLAY_INTERVAL  = 5000;
 const VISIBLE_SLIDES_LG  = 3;
@@ -29,7 +27,7 @@ function createSlider(sliderEl) {
 
     const state = { index: 0 };
 
-    /* ── Dots ─────────────────────────────────────────────── */
+    
     function buildDots() {
         if (!dotsWrap) return;
         dotsWrap.innerHTML = '';
@@ -52,7 +50,7 @@ function createSlider(sliderEl) {
         });
     }
 
-    /* ── Slides visíveis por breakpoint ──────────────────── */
+    
     function getVisibleCount() {
         if (window.innerWidth <= 640)  return VISIBLE_SLIDES_SM;
         if (window.innerWidth <= 1024) return VISIBLE_SLIDES_MD;
@@ -63,7 +61,7 @@ function createSlider(sliderEl) {
         return Math.max(0, slides.length - getVisibleCount());
     }
 
-    /* ── Navegação ───────────────────────────────────────── */
+    
     function goTo(index) {
         const maxIndex  = getMaxIndex();
         state.index     = Math.max(0, Math.min(index, maxIndex));
@@ -89,7 +87,7 @@ function createSlider(sliderEl) {
         goTo(prevIndex);
     }
 
-    /* ── Autoplay ────────────────────────────────────────── */
+    
     function startAutoplay() {
         stopAutoplay();
         autoplayTimer = setInterval(goNext, AUTOPLAY_INTERVAL);
@@ -99,7 +97,7 @@ function createSlider(sliderEl) {
         clearInterval(autoplayTimer);
     }
 
-    /* ── Touch / Drag ────────────────────────────────────── */
+    
     function onDragStart(event) {
         isDragging = true;
         startX     = event.clientX ?? event.touches?.[0].clientX ?? 0;
@@ -125,7 +123,7 @@ function createSlider(sliderEl) {
     track.addEventListener('mouseup',     onDragEnd);
     track.addEventListener('touchend',    onDragEnd);
 
-    /* ── Botões ──────────────────────────────────────────── */
+    
     btnPrev?.addEventListener('click', () => { goPrev(); restartAutoplay(); });
     btnNext?.addEventListener('click', () => { goNext(); restartAutoplay(); });
 
@@ -134,11 +132,11 @@ function createSlider(sliderEl) {
         startAutoplay();
     }
 
-    /* ── Pausa ao hover ──────────────────────────────────── */
+    
     sliderEl.addEventListener('mouseenter', stopAutoplay);
     sliderEl.addEventListener('mouseleave', startAutoplay);
 
-    /* ── Reinicializar ao redimensionar ─────────────────── */
+    
     let resizeTimer;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
@@ -148,7 +146,7 @@ function createSlider(sliderEl) {
         }, 200);
     });
 
-    /* ── Inicializar ─────────────────────────────────────── */
+    
     buildDots();
     goTo(0);
     startAutoplay();

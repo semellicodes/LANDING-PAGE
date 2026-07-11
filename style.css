@@ -1,8 +1,6 @@
-/* ============================================================
-   STYLE.CSS — Global Utilities & Section Foundations
-   ============================================================ */
 
-/* ── Container ──────────────────────────────────────────── */
+
+
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -10,7 +8,7 @@
   padding-inline: var(--container-padding);
 }
 
-/* ── Section Padrão ─────────────────────────────────────── */
+
 .section {
   padding-block: var(--space-20);
 }
@@ -23,7 +21,7 @@
   background-color: var(--color-primary-bg);
 }
 
-/* ── Section Header ─────────────────────────────────────── */
+
 .section__header {
   text-align: center;
   margin-bottom: var(--space-12);
@@ -71,7 +69,7 @@
   line-height: var(--line-height-relaxed);
 }
 
-/* ── Botões ─────────────────────────────────────────────── */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -139,7 +137,7 @@
   font-size: var(--font-size-sm);
 }
 
-/* ── Badge ──────────────────────────────────────────────── */
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -161,7 +159,7 @@
   color: var(--color-secondary-dark);
 }
 
-/* ── Card Base ──────────────────────────────────────────── */
+
 .card {
   background-color: var(--color-white);
   border-radius: var(--radius-xl);
@@ -177,7 +175,7 @@
   box-shadow: var(--shadow-xl);
 }
 
-/* ── Utilitários de visibilidade ────────────────────────── */
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -190,7 +188,7 @@
   border: 0;
 }
 
-/* ── Star Rating ────────────────────────────────────────── */
+
 .stars {
   display: flex;
   gap: 2px;
@@ -198,7 +196,7 @@
   font-size: var(--font-size-sm);
 }
 
-/* ── Divider ────────────────────────────────────────────── */
+
 .divider {
   width: 60px;
   height: 4px;
@@ -212,14 +210,14 @@
   margin-bottom: var(--space-6);
 }
 
-/* ── Tag numérica do contador ────────────────────────────── */
+
 .counter-value {
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-extrabold);
   color: var(--color-primary);
 }
 
-/* ── Table Section ──────────────────────────────────────── */
+
 section[id] {
   scroll-margin-top: calc(var(--header-height) + 20px);
 }

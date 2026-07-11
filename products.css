@@ -1,12 +1,10 @@
-/* ============================================================
-   PRODUCTS.CSS — Products Section
-   ============================================================ */
+
 
 .products {
     background-color: var(--color-bg);
 }
 
-/* ── Filtros ─────────────────────────────────────────────── */
+
 .products__filters {
     display: flex;
     flex-wrap: wrap;
@@ -35,14 +33,14 @@
     box-shadow: var(--shadow-primary);
 }
 
-/* ── Grid ────────────────────────────────────────────────── */
+
 .products__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-6);
 }
 
-/* ── Product Card ────────────────────────────────────────── */
+
 .product-card {
     position: relative;
     background-color: var(--color-white);
@@ -59,7 +57,7 @@
     box-shadow: var(--shadow-xl);
 }
 
-/* ── Imagem ─────────────────────────────────────────────── */
+
 .product-card__image-wrap {
     position: relative;
     aspect-ratio: 4 / 3;
@@ -88,7 +86,7 @@
     background: linear-gradient(135deg, var(--color-primary-bg), #FFE0C8);
 }
 
-/* ── Ações sobre a imagem ───────────────────────────────── */
+
 .product-card__actions {
     position: absolute;
     top: var(--space-3);
@@ -123,7 +121,7 @@
     color: var(--color-white);
 }
 
-/* ── Badges ─────────────────────────────────────────────── */
+
 .product-card__tag {
     position: absolute;
     top: var(--space-3);
@@ -151,7 +149,7 @@
     color: var(--color-white);
 }
 
-/* ── Corpo do card ──────────────────────────────────────── */
+
 .product-card__body {
     padding: var(--space-5);
     display: flex;
@@ -188,7 +186,7 @@
     color: var(--color-text-muted);
 }
 
-/* ── Preço ──────────────────────────────────────────────── */
+
 .product-card__footer {
     display: flex;
     align-items: center;
@@ -235,7 +233,7 @@
     box-shadow: 0 6px 20px rgba(255, 140, 66, 0.45);
 }
 
-/* ── Ver mais ────────────────────────────────────────────── */
+
 .products__cta {
     text-align: center;
     margin-top: var(--space-10);

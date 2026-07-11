@@ -1,14 +1,4 @@
-/* ============================================================
-   RESPONSIVE.CSS — Breakpoints & Adaptive Layouts
-   Breakpoints:
-     xl   → ≤1280px  (Large Notebook)
-     lg   → ≤1024px  (Notebook / Tablet Landscape)
-     md   → ≤768px   (Tablet Portrait)
-     sm   → ≤640px   (Mobile Large)
-     xs   → ≤480px   (Mobile Small)
-   ============================================================ */
 
-/* ── XL — Large Notebook ────────────────────────────────── */
 @media (max-width: 1280px) {
   :root {
     --container-padding: var(--space-5);
@@ -25,7 +15,7 @@
   }
 }
 
-/* ── LG — Notebook / Tablet Landscape ──────────────────── */
+
 @media (max-width: 1024px) {
   :root {
     --container-padding: var(--space-5);
@@ -33,7 +23,7 @@
     --space-24: 4.5rem;
   }
 
-  /* Header */
+  
   .nav--desktop {
     display: none;
   }
@@ -47,23 +37,23 @@
     display: block;
   }
 
-  /* Features */
+  
   .features__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Services */
+  
   .services__grid {
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-4);
   }
 
-  /* Products */
+  
   .products__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Gallery */
+  
   .gallery__grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -77,18 +67,18 @@
     grid-column: span 1;
   }
 
-  /* Testimonials */
+  
   .testimonial-card {
     flex: 0 0 calc(50% - var(--space-3));
   }
 
-  /* Contact */
+  
   .contact__inner {
     grid-template-columns: 1fr;
     gap: var(--space-10);
   }
 
-  /* Table */
+  
   .pricing-table th,
   .pricing-table td {
     padding: var(--space-3) var(--space-4);
@@ -98,7 +88,7 @@
     max-width: 600px;
   }
 
-  /* Footer */
+
   .footer__grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-8);
@@ -108,20 +98,20 @@
     grid-column: span 2;
   }
 
-  /* Promo */
+
   .promo-banner__inner {
     gap: var(--space-6);
   }
 }
 
-/* ── Services específico para LG ────────────────────────── */
+
 @media (max-width: 1024px) and (min-width: 769px) {
   .services__grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* ── MD — Tablet Portrait ───────────────────────────────── */
+
 @media (max-width: 768px) {
   :root {
     --container-padding: var(--space-4);
@@ -129,17 +119,17 @@
     --space-20: 3.5rem;
   }
 
-  /* Section */
+
   .section__title {
     font-size: var(--font-size-3xl);
   }
 
-  /* Header */
+
   .header {
     height: var(--header-height-sm);
   }
 
-  /* Hero */
+
   .hero__content {
     padding-block: var(--space-12);
     max-width: 100%;
@@ -157,19 +147,19 @@
     gap: var(--space-6);
   }
 
-  /* Features */
+
   .features__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-4);
   }
 
-  /* Services */
+
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-4);
   }
 
-  /* Promo Banner */
+
   .promo-banner__inner {
     flex-direction: column;
     text-align: center;
@@ -185,13 +175,13 @@
     justify-content: center;
   }
 
-  /* Products */
+
   .products__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-4);
   }
 
-  /* Gallery */
+
   .gallery__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-3);
@@ -206,12 +196,12 @@
     grid-column: span 2;
   }
 
-  /* Testimonials */
+
   .testimonial-card {
     flex: 0 0 calc(100% - var(--space-2));
   }
 
-  /* Form */
+
   .form__row {
     grid-template-columns: 1fr;
   }
@@ -220,7 +210,6 @@
     padding: var(--space-6);
   }
 
-  /* Table */
   .pricing-table__wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -230,7 +219,7 @@
     min-width: 680px;
   }
 
-  /* Footer */
+
   .footer__grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -248,7 +237,7 @@
   }
 }
 
-/* ── SM — Mobile Large ──────────────────────────────────── */
+
 @media (max-width: 640px) {
   :root {
     --container-padding: var(--space-4);
@@ -257,7 +246,7 @@
     --space-20: 3rem;
   }
 
-  /* Section header */
+
   .section__title {
     font-size: var(--font-size-2xl);
   }
@@ -267,7 +256,7 @@
     width: 16px;
   }
 
-  /* Hero */
+
   .hero__eyebrow {
     font-size: var(--font-size-xs);
   }
@@ -298,18 +287,18 @@
     font-size: var(--font-size-2xl);
   }
 
-  /* Table */
+  
   .pricing-table th,
   .pricing-table td {
     padding: var(--space-3);
   }
 
-  /* Features */
+  
   .features__grid {
     grid-template-columns: 1fr;
   }
 
-  /* Services */
+  
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-3);
@@ -325,22 +314,22 @@
     font-size: 1.5rem;
   }
 
-  /* Products */
+  
   .products__grid {
     grid-template-columns: 1fr;
   }
 
-  /* Gallery */
+  
   .gallery__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Testimonials */
+  
   .testimonial-card {
     padding: var(--space-5);
   }
 
-  /* Footer */
+  
   .footer__grid {
     grid-template-columns: 1fr;
   }
@@ -372,7 +361,7 @@
   }
 }
 
-/* ── XS — Mobile Small ──────────────────────────────────── */
+
 @media (max-width: 480px) {
   .hero__scroll {
     display: none;

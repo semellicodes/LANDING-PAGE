@@ -1,6 +1,4 @@
-/* ============================================================
-   MENU.JS — Mobile Navigation Toggle
-   ============================================================ */
+
 
 export function initMenu() {
     const toggle   = document.querySelector('.menu-toggle');
@@ -33,23 +31,19 @@ export function initMenu() {
     toggle.addEventListener('click', toggleMenu);
     overlay?.addEventListener('click', closeMenu);
 
-    // Fechar ao clicar em um link do menu mobile
     mobileNav.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', closeMenu);
     });
 
-    // Fechar com Esc
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') closeMenu();
     });
 
-    // Fechar ao redimensionar para desktop
     const mediaQuery = window.matchMedia('(min-width: 1025px)');
     mediaQuery.addEventListener('change', (event) => {
         if (event.matches) closeMenu();
     });
 
-    // Marcar link ativo no menu mobile por scroll
     updateActiveNavLinks();
 }
 

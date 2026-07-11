@@ -1,19 +1,17 @@
-/* ============================================================
-   SERVICES.CSS — Services Section
-   ============================================================ */
+
 
 .services {
   background-color: var(--color-white);
 }
 
-/* ── Grid de Serviços ───────────────────────────────────── */
+
 .services__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--space-6);
 }
 
-/* ── Card de Serviço ────────────────────────────────────── */
+
 .service-card {
   position: relative;
   display: flex;
@@ -56,7 +54,7 @@
   opacity: 1;
 }
 
-/* ── Ícone ──────────────────────────────────────────────── */
+
 .service-card__icon-wrap {
   position: relative;
   z-index: 1;
@@ -86,7 +84,7 @@
   transform: scale(1.1) rotate(-6deg);
 }
 
-/* ── Conteúdo ───────────────────────────────────────────── */
+
 .service-card__title {
   position: relative;
   z-index: 1;
@@ -147,7 +145,7 @@
   gap: var(--space-3);
 }
 
-/* ── Tag popular ─────────────────────────────────────────── */
+
 .service-card__badge {
   position: absolute;
   top: var(--space-4);
@@ -167,7 +165,7 @@
   z-index: 2;
 }
 
-/* ── Banner Promocional ─────────────────────────────────── */
+
 .promo-banner {
   position: relative;
   overflow: hidden;
